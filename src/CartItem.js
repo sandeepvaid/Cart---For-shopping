@@ -4,16 +4,16 @@ import React from 'react';
 class CartIem extends React.Component{
 
     //This is the way how we create states in react which act as an javascript object
-    constructor(){
-        //Here we use super because we have to call the parent constructor which is present in react component
-        super();
-        this.state = {
-            price:99,
-            title:'Realme Phone',
-            qty:0,
-            img:""
-        }
-    }
+    // constructor(){
+    //     //Here we use super because we have to call the parent constructor which is present in react component
+    //     super();
+    //     this.state = {
+    //         price:99,
+    //         title:'Realme Phone',
+    //         qty:0,
+    //         img:""
+    //     }
+    // }
 
     //Event Handlers function
     increaseQuantity = ()=>{
@@ -50,7 +50,9 @@ class CartIem extends React.Component{
     }
 
     render(){
-        const {price,title,qty,img} = this.state;
+        
+        const {price,title,qty,img} = this.props.product;
+        
         return (
             <div className='cart-item'>
                 <div style={styles.mainCart} className="cart-container">
@@ -67,7 +69,7 @@ class CartIem extends React.Component{
                     <div className="action-button">
 
                         <div className="upper-part">
-                            <img alt="delete" className="action-icons" src="https://cdn-icons-png.flaticon.com/512/1214/1214428.png" />
+                            <img  alt="delete" className="action-icons" src="https://cdn-icons-png.flaticon.com/512/1215/1215092.png" />
                         </div >
 
                         <div className="lower-part">
@@ -99,7 +101,7 @@ const styles = {
     detail:{
       padding:5,
       fontSize:25,
-      color:"grey",
+      color:"white",
       marginBottom:10
     },
   

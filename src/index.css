@@ -9,10 +9,24 @@ body {
 }
 
 
+/* CART */
+
+
+
+.Cart{
+
+  
+  display: inline-flex; 
+  flex-direction: column; 
+  
+  /* justify-content: space-around; */
+}
+
 .cart-container {
+  margin: 20px;
   border-radius: 10px;
   transition: transform .2s;
-  background-color: rgb(224, 214, 193);
+  background-color: rgb(32, 32, 31);
   padding: 15px;
   display: flex;
   flex-direction: row;
@@ -22,9 +36,9 @@ body {
 
 .cart-container:hover{
   transition:all 200ms linear;
-  box-shadow: 2px -1px 38px 1px rgba(15,131,181,0.92);
-  -webkit-box-shadow: 2px -1px 38px 1px rgba(15,131,181,0.92);
-  -moz-box-shadow: 2px -1px 38px 1px rgba(15,131,181,0.92);
+  box-shadow: 2px -1px 38px 1px rgba(214, 103, 12, 0.92);
+  -webkit-box-shadow: 2px -1px 38px 1px rgba(214, 103, 12, 0.92);
+  -moz-box-shadow: 2px -1px 38px 1px rgba(214, 103, 12, 0.92);
 }
 
 .right-part {
@@ -42,7 +56,10 @@ body {
   flex-direction: row-reverse;
 }
 
+
+
 .upper-part img {
+  
   height: 20px;
   width: 20px;
 }
@@ -53,8 +70,8 @@ body {
   display: flex;
   margin: 10px;
   height: 30px;
-  border: 2px solid lightgrey;
-  background-color: lightgrey;
+  border: 2px solid rgba(214, 103, 12, 0.92);
+  background-color: rgba(214, 103, 12, 0.92);
   border-radius: 10px;
 }
 
@@ -65,8 +82,8 @@ body {
 }
 
 button {
-  color: black;
-  border: 1px solid lightgrey;
+  
+  border: 1px solid rgba(214, 103, 12, 0.92);
   border-radius: 6px;
   height: 30px;
   width: 30px;
