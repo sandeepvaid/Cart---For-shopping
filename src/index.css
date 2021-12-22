@@ -10,16 +10,10 @@ body {
 
 
 /* CART */
-
-
-
 .Cart{
-
-  
   display: inline-flex; 
   flex-direction: column; 
-  
-  /* justify-content: space-around; */
+
 }
 
 .cart-container {
@@ -59,7 +53,7 @@ body {
 
 
 .upper-part img {
-  
+  cursor: pointer;
   height: 20px;
   width: 20px;
 }

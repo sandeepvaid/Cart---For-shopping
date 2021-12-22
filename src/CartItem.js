@@ -52,7 +52,7 @@ class CartIem extends React.Component{
     render(){
         
         const {price,title,qty,img} = this.props.product;
-        
+        const {product,onIncreaseQty,onDecreaseQty,onDeleteQty} = this.props;
         return (
             <div className='cart-item'>
                 <div style={styles.mainCart} className="cart-container">
@@ -69,18 +69,18 @@ class CartIem extends React.Component{
                     <div className="action-button">
 
                         <div className="upper-part">
-                            <img  alt="delete" className="action-icons" src="https://cdn-icons-png.flaticon.com/512/1215/1215092.png" />
+                            <img onClick={()=>onDeleteQty(product.id)}  alt="delete" className="action-icons" src="https://cdn-icons-png.flaticon.com/512/1215/1215092.png" />
                         </div >
 
                         <div className="lower-part">
                             {/*Here we use bind so that when we call that function we can access that object value or we can use arrow function*/}
-                            <button onClick={this.increaseQuantity} className="action-icons">
+                            <button onClick={()=>onIncreaseQty(product)} className="action-icons">
                                 +
                             </button>
                             <span className="action-icons">
                                 {qty}
                             </span>
-                            <button onClick={this.decreaseQuantity} className="action-icons">
+                            <button onClick={()=>onDecreaseQty(product)} className="action-icons">
                                 -
                             </button>
                         </div>
