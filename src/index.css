@@ -11,9 +11,10 @@ body {
 
 /* CART */
 .Cart{
+  justify-content: space-between;
   display: inline-flex; 
-  flex-direction: column; 
-  
+  flex-direction: row; 
+  flex-wrap: wrap;
 }
 
 /* NAVBAR */
